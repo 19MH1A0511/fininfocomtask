@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const DetailView = ({ onClose, onSelected }) => {
+const DetailView = ({ onClose, restaurant }) => {
   const [activeCategory, setActiveCategory] = useState('Burger');
 
   // Dummy categories (you can make dynamic)
@@ -19,7 +19,7 @@ const DetailView = ({ onClose, onSelected }) => {
             className="w-full h-full object-cover"
           />
           {/* Optional close button */}
-          {onSelected && (
+          {onClose && (
             <button
               onClick={onClose}
               className="absolute top-4 right-4 bg-white/80 p-2 rounded-full shadow hover:bg-white"
@@ -114,7 +114,6 @@ const DetailView = ({ onClose, onSelected }) => {
                   </p>
                 </div>
                 <button
-                  onClick={() => onSelected?.({ name, price: 3.99 + i * 0.40 })}
                   className="bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-orange-700"
                 >
                   Add

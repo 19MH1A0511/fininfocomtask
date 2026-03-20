@@ -2,7 +2,6 @@
 // import './App.css'
 import { Routes,Route } from "react-router-dom";
 import HomePage from "./Compoment/HomePage";
-import DetailView from "./Compoment/DetailView";
 
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
     <>
      <Routes>
       <Route path="/" element={<HomePage />}/>
-      <Route path="/details" element={<DetailView />} />
      </Routes>
     </>
   );

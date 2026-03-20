@@ -109,7 +109,7 @@ const HomePage = () => {
                     </div>
                 ))}
             </div>
-                {selected && (<DetailView onSelected={selected} onClose={handleCloseSelected} />)}
+                {selected && (<DetailView restaurant={selected} onClose={handleCloseSelected} />)}
         </div>
     );
 };
