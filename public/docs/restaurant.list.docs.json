@@ -1,0 +1,114 @@
+[
+    {
+        "restaurants": [
+            {
+                "id": 1,
+                "name": "Grafterr Food - Mid Lothian",
+                "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque dolor gravida diam sit aliquam mauris.",
+                "address": "28–32 Iron Gate, Derby, Derbyshire, DE1 3GL",
+                "status": "open",
+                "time": "Closes at 12:25AM",
+                "image": "../../public/photos/45ef62e1d8f769fa28a08a76177ad495_featured_v2.avif"
+            },
+            {
+                "id": 2,
+                "name": "Grafterr Food - West Lothian",
+                "description": "Delicious meals served fresh with premium quality ingredients.",
+                "address": "12 King Street, London, UK",
+                "status": "closed",
+                "time": "Opens at 10:25AM",
+                "image": "../../public/photos/im-65599456.avif"
+            },
+            {
+                "id": 3,
+                "name": "Grafterr Food - Edinburgh",
+                "description": "Serving authentic flavors with modern touch.",
+                "address": "45 Queen Street, Edinburgh",
+                "status": "open",
+                "time": "Closes at 11:30PM",
+                "image": "../../public/photos/images.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Grafterr Food - Glasgow",
+                "description": "Best food experience with cozy ambiance.",
+                "address": "78 George Square, Glasgow",
+                "status": "open",
+                "time": "Closes at 1:00AM",
+                "image": "../../public/photos/images1.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Grafterr Food - Manchester",
+                "description": "Enjoy a wide variety of dishes and beverages.",
+                "address": "22 Market Street, Manchester",
+                "status": "closed",
+                "time": "Opens at 9:00AM",
+                "image": "../../public/photos/restaurant-interior_1127-3394.avif"
+            },
+            {
+                "id": 6,
+                "name": "Grafterr Food - Birmingham",
+                "description": "Fresh and hygienic food served daily.",
+                "address": "10 High Street, Birmingham",
+                "status": "open",
+                "time": "Closes at 12:00AM",
+                "image": "../../public/photos/seafood-buffet-at-mezz.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Grafterr Food - Leeds",
+                "description": "A perfect place for family dining.",
+                "address": "5 Park Row, Leeds",
+                "status": "closed",
+                "time": "Opens at 11:00AM",
+                "image": "../../public/photos/Untitled.webp"
+            },
+            {
+                "id": 8,
+                "name": "Grafterr Food - Liverpool",
+                "description": "Authentic recipes with rich taste.",
+                "address": "30 Albert Dock, Liverpool",
+                "status": "open",
+                "time": "Closes at 2:00AM",
+                "image": "../../public/photos/restaurant-interior_1127-3394.avif"
+            },
+            {
+                "id": 9,
+                "name": "Grafterr Food - Bristol",
+                "description": "Experience the best dining services.",
+                "address": "18 Broad Street, Bristol",
+                "status": "open",
+                "time": "Closes at 11:00PM",
+                "image": "../../public/photos/images.jpg"
+            },
+            {
+                "id": 10,
+                "name": "Grafterr Food - Oxford",
+                "description": "Premium quality meals with great service.",
+                "address": "7 Cornmarket Street, Oxford",
+                "status": "closed",
+                "time": "Opens at 10:00AM",
+                "image": "../../public/photos/seafood-buffet-at-mezz.jpg"
+            },
+            {
+                "id": 11,
+                "name": "Grafterr Food - Cambridge",
+                "description": "Classic dishes with modern presentation.",
+                "address": "14 Trinity Street, Cambridge",
+                "status": "open",
+                "time": "Closes at 12:30AM",
+                "image": "../../public/photos/Untitled.webp"
+            },
+            {
+                "id": 12,
+                "name": "Grafterr Food - Nottingham",
+                "description": "Serving happiness with every meal.",
+                "address": "25 Castle Gate, Nottingham",
+                "status": "open",
+                "time": "Closes at 1:30AM",
+                "image": "../../public/photos/restaurant-interior_1127-3394.avif"
+            }
+        ]
+    }
+]
