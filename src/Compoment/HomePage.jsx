@@ -4,8 +4,9 @@ import restaurantLists from "../../public/docs/restaurant.list.docs.json";
 import DetailView from "./DetailView";
 
 const HomePage = () => {
-    const [listData] = useState(restaurantLists?.[0]?.restaurants || []);
-    const [selected,setSelected] =useState();
+    const [listData, setListData] = useState(restaurantLists?.[0]?.restaurants || []);
+    const [selected, setSelected] = useState();
+    const [search, setSearch] = useState();
 
     const handleDetails = (items) => {
         setSelected(items);
@@ -13,6 +14,16 @@ const HomePage = () => {
 
     const handleCloseSelected = () => {
         setSelected()
+    };
+
+    const handleSearchObject = () => {
+        const originalData = restaurantLists?.[0]?.restaurants || [];
+        const filtered = originalData.filter((item) =>
+            item.name.toLowerCase().includes(search.toLowerCase()) ||
+            item.address.toLowerCase().includes(search.toLowerCase())
+        );
+
+        setListData(filtered);
     };
 
     return (
@@ -34,11 +45,14 @@ const HomePage = () => {
 
                     <input
                         type="text"
+                        value={search}
                         placeholder="Search town, postcode or restaurant name"
                         className="w-full sm:w-[60%] px-4 py-3 rounded-lg border border-gray-200 outline-none"
+                        onChange={(e) => setSearch(e.target.value)}
                     />
 
-                    <button className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition">
+                    <button className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
+                        onClick={handleSearchObject}>
                         Search
                     </button>
                 </div>
@@ -78,8 +92,8 @@ const HomePage = () => {
                             <div className="flex items-center gap-3 mt-3">
                                 <span
                                     className={`px-2 py-1 rounded text-xs ${item.status === "open"
-                                            ? "bg-green-100 text-green-600"
-                                            : "bg-red-100 text-red-600"
+                                        ? "bg-green-100 text-green-600"
+                                        : "bg-red-100 text-red-600"
                                         }`}
                                 >
                                     {item.status}
@@ -109,7 +123,7 @@ const HomePage = () => {
                     </div>
                 ))}
             </div>
-                {selected && (<DetailView restaurant={selected} onClose={handleCloseSelected} />)}
+            {selected && (<DetailView restaurant={selected} onClose={handleCloseSelected} />)}
         </div>
     );
 };
